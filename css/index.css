@@ -1,0 +1,428 @@
+body{
+	background:url(../img/bgimg.png);
+	background-color: #FCD275;
+	position: relative;
+	overflow: hidden;
+}
+/*----------------------header---------------*/
+	header{
+		width: 100%;
+		height: 0.8rem;background-color: #e2bc69;
+		line-height: 0.8rem;
+		text-align: center;
+		border-bottom: 1px solid #f00;
+		font-size: .2rem;
+		overflow: hidden;
+		background: url(../img/top_bg.png);
+		}
+	header .top_btn{float: left;margin:.1rem; }
+	header .top_btn img{width: .36rem; }
+	header .logo_btn{margin-right:.3rem;margin-top:.05rem;}
+	header .logo_btn img{width: .66rem;}
+/*----------------------------------banner---------------------------*/
+	.swipe{
+		height: 3rem;
+		width: 100%;
+		position: relative;
+		  overflow: hidden;
+		  visibility: hidden;
+		  position: relative;
+	}
+	.swipe ul {
+	  position: absolute;
+	  bottom: .1rem;
+	  right: 0.2rem;
+	}
+	.swipe ul li {
+	  display: inline-block;
+	  line-height: 30px;
+	  text-align: center;
+	  width: 30px;
+	  height: 30px;
+	  background-color: red;
+	  border-radius: 15px;
+	}
+	.swipe-wrap {
+	  overflow: hidden;
+	  position: relative;
+	}
+	.swipe-wrap > div {
+	  float: left;
+	  width: 100%;
+	  position: relative;
+	}
+	.swipe-wrap img {
+	  width: 100%;
+	}
+/*---------------------------------------ads------------------------*/
+	.ads{
+		width: 100%;
+	}
+	.ads img{width: 100%;}
+/*-----------------------item---------------*/
+	.itemlist{
+		padding: .3rem 0;
+		height: .82rem;
+		position: relative;
+	}
+	.itemlist:before{
+		content:'';
+		width: .54rem;
+		height: 0.02rem;
+		position: absolute;
+		top:50%;
+		left: 0;
+		background-color:#7F5F56;
+		z-index: 10;
+	}
+	.itemlist:after{
+		content:'';
+		width: .54rem;
+		height: 0.02rem;
+		position: absolute;
+		top:50%;
+		right: 0;
+		background-color:#7F5F56;
+		z-index: 10;
+	}
+	.itemlist ul{
+		width: 5.27rem;
+		margin:0 auto;
+		position: relative;
+		overflow: hidden;
+	}
+	.itemlist li{float: left;width:20%; position: relative;text-align: center;}
+	.itemlist li:not(:last-of-type):after{
+		content: "";
+		display: inline-block;
+		width: .05rem;
+		height: .05rem;
+		background-color: #7F5F56;
+		border-radius: 50%;
+		position: absolute;
+		right:-0.02rem;
+		top: 50%;
+	}
+	.itemlist ul img{
+		width: 80%;
+	}
+
+/*-------------------------------------main-------------------------*/
+	.mainwrap{
+	}
+	.main{
+		width: 5.27rem;
+		height:auto;
+		margin:0 auto;
+		overflow: hidden;
+	}
+	.main .logo_b{margin-bottom: 4px;}
+	.main .logo_b img{width: 100%;clear: both;}
+	.main .classic{
+		overflow: hidden;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+	}
+	.main .classic li{}
+	.main .classic li img{
+		width: 100%;
+	}
+
+	.main .public{margin-top:25px;}
+	.main .public .title{background-color: transparent;border-bottom: 0 none;}
+	.main .public .title img{
+		width: 1.89rem;
+	}
+	.main .public .title .fr{margin-top: 27px;
+		width: .91rem;
+		height: .19rem;
+		background-color: #765654;
+	}
+
+	.main .public .main{
+		font-size: .18rem;
+		font-family:'微软雅黑';
+		color:#765654;
+		margin-bottom: .31rem;
+	}
+	.main .public .main li{
+		margin-left: .27rem;
+		padding-left: .2rem;
+		border-bottom: 1px dashed #765654;
+		line-height: .35rem;
+		background:url(../img/index_1.png) no-repeat 0 .1rem;
+		background-size: .16rem;
+	}
+	.main .public .main .times{
+		float: right;
+	}
+	.last{
+		border:0 none;
+	}
+/*----------------footer------------------------*/
+	footer{
+		background-color:#C49057;
+		height: .84rem;
+	  display: flex;
+	  justify-content: space-around;
+	}
+	footer a {
+		padding-top: .1rem;
+	  	display: flex;
+	  	flex-direction: column;
+	   	align-items:center; 
+	  	color: #808080;
+		font-size: .2rem;
+		color:#C49057;
+	}
+	footer a.on{
+		color:#FCD275;
+	}
+	footer a img {
+		width: .34rem;
+	}
+/*----------------sidebar----------*/
+	.sidebar{
+		position:absolute;
+		left: 0;
+		top: 0;
+		padding-top: .8rem;
+		width: 2.3rem;
+		height: 100%;
+		background-color: #B50005;
+		z-index: 999;
+		display: none;
+		box-sizing:border-box;
+		overflow: hidden;
+	}
+	.sidebar.on{
+		display: block;
+	}
+	.sidebar{
+		text-align: center;
+	}
+	.sidebar .item h2 img{
+		width: 2rem;
+	}
+	.sidebar .item ul{
+		margin:0 auto;
+		display: none;
+		width: 1.97rem;
+		padding:.33rem 0;
+		border-radius: .1rem;
+		background-color: #FCD275;
+	}
+	.sidebar .item ul li{
+		height: .6rem;
+		line-height: .6rem;
+	}
+	.sidebar .item ul li.on{
+		background-color:#B50005;
+	}
+	.sidebar .item ul a{
+		font-size: .2rem;
+
+	}
+	.sidebar .item ul li.on a{
+		color: #FCD275;
+		font-weight: bold;
+	}
+	.sidebar .item.on ul{
+		display:block;
+
+	}
+	.sidebar .item  ul img{
+		width: 100%;
+	}
+	.sidebar .bottom{
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+	}
+	.sidebar .bottom img{
+		width: 100%;
+	}
+
+
+/*------------brand----------------------*/
+	.brand{
+		width: 5.7rem;
+		margin:0 auto;
+		margin-bottom: 0.23rem;
+	}
+	.brand .item{
+		padding: 0.07rem 0;
+		overflow: hidden;
+	}
+	.brand .item h2,.brand .item ul{
+		float: left;
+	}
+	.brand .item h2{
+		width: 1rem;
+	}
+	.brand .item h2 img{
+		width: 0.72rem;
+	}
+	.brand .item ul{
+		margin-top: .42rem;
+		width: 4.7rem;
+		font-size: 0.22rem;
+		padding-bottom: 0.16rem;
+		border-bottom: 0.02rem solid #C30D23;
+		font-style: ;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		justify-content: space-between;
+	}
+	.brand .item ul li.on{
+		background-color: #C30D23;
+		color:#FCD275;
+		padding:0 0.05rem;
+		position: relative;
+	}
+	.brand .item ul li.on:after{
+		content:'';
+		width: 0.05rem;
+		height: 0.05rem;
+		border: 0.02rem  solid #C30D23;
+		transform: rotate(45deg);
+		position: absolute;
+		background-color: #FCD275;
+		left: 50%;
+		bottom:-0.2rem;
+		border-right: 0 none;
+		border-bottom: 0 none;
+
+	}
+	.brand .detail{
+		display:none;
+		background:url(../img/brand_detail.png) no-repeat right top;
+		-webkit-background-size: 1.43rem;
+		background-size:1.43rem;
+	}
+	.brand .detail.on{
+		display: block;
+	}
+	.brand .detail_item{
+		padding: 0.15rem 0;
+	}
+	.brand .detail_item h3{
+		text-align: center;
+		position: relative;
+	}
+	.brand .detail_item h3 img{
+		width: .81rem;
+	}
+	.brand .detail_item ul{
+		font-size: .2rem;
+		line-height: 0.33rem;	
+	}
+	.brand .detail_item ul li{
+		display: flex;
+	}
+	.brand .detail_item ul .v_line{
+		padding:0 0.2rem;
+	}
+	.brand .detail_item ul .red{
+		color:#B50005;
+		white-space: nowrap;
+	}
+	.brand .detail h2{
+		font-size: 0.24rem;
+		line-height: 0.35rem;
+		color:#B50005;
+		font-weight: bold;
+		font-family: '微软雅黑';
+		padding-bottom: 0.15rem;
+		border-bottom: 1px solid #B50005;
+	}
+	.brand .detail h2 .title{
+		color:#8C6B59;
+	}
+	.brand article{
+		padding-top: 0.3rem;
+	}
+	.brand article p{
+		font-size: 0.18rem;
+		text-indent:0.36rem;
+		line-height: 0.33rem;
+		text-align: justify;
+	}
+	.brand div.img{
+		padding: 0.52rem 0 0.3rem 0;
+	}
+	.brand .adv .adv_item{
+		display: -webkit-flex;
+		display: flex;
+		margin-top: 0.4rem;
+	}
+	.brand .adv .adv_item h3{
+		font-size:0.2rem ;
+		line-height: 0.3rem;
+		color:#765654;
+		font-weight: bold;
+		margin-bottom: 0.1rem;
+	}
+	.brand .adv .adv_item .txt{
+		width: 2.95rem;
+		line-height: 0.3rem;
+	}
+	.brand .adv .adv_item div.img{
+		padding: 0;
+	}
+
+/*-------------icn----------------*/
+.icn .detail h2{
+	color:#765654;
+}
+.icn .detail article h3{
+	margin-bottom: 0.2rem;
+	font-weight: bold;
+	font-size: 0.18rem;
+	color:#765654;
+}
+.icn .detail article>div{
+	margin-bottom: 0.4rem;
+}
+.icn .detail article .item{
+	display: -webkit-flex;
+	display: flex;
+	justify-content:space-between;
+}
+.icn .detail article .item .txt{
+	width: 3.03rem;
+}
+.icn .detail article .item .img{
+	width: 2.12rem;
+	padding: 0;
+}
+.icn .detail article .item .img img{
+	width: 100%;
+}
+.icn .detail .yunbg{
+	height: 0.46rem;
+	background:url(../img/yun_bg.png) no-repeat right top;
+	-webkit-background-size: 1.8rem;
+	background-size: 1.8rem;
+	margin: 0;
+}
+
+/*-------------icn---culture----*/
+	.icn .culture .top{
+		display: -webkit-flex;
+		display: flex;
+	}
+	.icn .culture .top .left{
+		width: 1.64rem;
+	}
+	.icn .culture .top .right .right-item{
+		display: -webkit-flex;
+		display: flex;
+	}
