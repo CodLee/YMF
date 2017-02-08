@@ -15,13 +15,11 @@ window.mySwipe = Swipe(elem, {
   }
 });
 $('.top_btn').on('click',function(){
-  $('.sidebar').toggle('on');
+  $('.sidebar').addClass('on');
 });
-$('.sidebar').on('swipeLeft',function(e){
-  $(this).removeClass('on');
-  // e.preventDefault();
-  console.info('1234');
-
+$('.sidebar .right').on('click',function(e){
+    $('.sidebar').removeClass('on');
+    console.info(12)
 });
 $('.sidebar .item').on('click',function(){
   $(this).addClass('on').siblings().removeClass('on');

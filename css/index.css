@@ -1,6 +1,5 @@
 body{
 	background:url(../img/bgimg.png);
-	background-color: #FCD275;
 	position: relative;
 }
 /*----------------------header---------------*/
@@ -198,17 +197,30 @@ body{
 		position:fixed;
 		left: 0;
 		top: 0;
-		padding-top: .8rem;
-		width: 2.3rem;
+		width: 100%;
 		height: 100%;
-		background-color: #B50005;
 		z-index: 999;
 		display: none;
-		box-sizing:border-box;
 		overflow: hidden;
+
+	}
+	.sidebar .left{
+		padding-top: .8rem;
+		box-sizing:border-box;
+		width: 2.3rem;
+		height: 100%;
+		float: left;
+		position: relative;
+		background-color: #B50005;
+	}
+	.sidebar .right{
+		background-color: rgba(0,0,0,0.3);
+		height: 100%;
+		width:100%;
 	}
 	.sidebar.on{
-		display: block;
+		display: -webkit-flex;
+		display: flex;
 	}
 	.sidebar{
 		text-align: center;
@@ -315,6 +327,7 @@ body{
 		background:url(../img/brand_detail.png) no-repeat right top;
 		-webkit-background-size: 1.43rem;
 		background-size:1.43rem;
+		margin-bottom: 0.84rem;
 	}
 	.brand .detail.on{
 		display: block;
@@ -664,4 +677,183 @@ body{
 		color:#C30D23;
 	}
 
+/*-----------------figure--------形象----*/
+	.figure .item #brand_list{
+		justify-content:space-around;
+		font-size: 0.2rem;
+	}
+	.figure .item ul li{
+		padding: 0.05rem 0.15rem;
+	}
+	.figure .item ul li:first-of-type{
+		font-family:'微软雅黑';
+	}
+	.figure .detail{
+		padding-top: 0.86rem;
+	}
+	.figure .detail .big_img{
+		width: 100%;
+		border: 2px solid #B10508;
+		height: 3.57rem;
+		margin-bottom: 0.24rem;
+	}
+	.figure .detail .big_img li{
+		width: 100%;
+		height: 100%;
+		display: none;
+	}
+	.figure .detail .big_img li img{
+		width: 100%;
+		height: 100%;
+	}
+	.figure .detail .big_img li.on{
+		display: block;
+	}
+	.figure .detail .small_img{
+		width: 100%;
+		position: relative;
+		height: 1.05rem;
+	}
+	.figure .detail .small_img .btn{
+		position: absolute;
+		top: 50%;
+		left: 0.14rem;
+		display: block;
+		width: 0.2rem;
+		height: 0.3rem;
+		background-color: #B10508;
+		transform:translateY(-50%);
+		background:url(../img/btn.png) no-repeat -0.1rem -0.5rem;
+		-webkit-background-size: 0.4rem 0.92rem;
+		background-size: 0.4rem 0.92rem;
+	}
+	.figure .detail .small_img .next{
+		right:0.14rem;
+		left: auto;
+		background-position: -0.1rem -0.1rem;
+	}
+	.figure .detail .small_img .img{
+		width: 4.91rem;
+		height: 100%;
+		margin:0 auto;
+		display: -webkit-flex;
+		display: flex;
+		justify-content:space-between;
+	}
 	
+	.figure .detail .small_img .img li{
+		border: 1px solid #B10508;
+		width: 1.60rem;
+		height: 100%;
+	}
+	.figure .detail .small_img .img li.on{
+		display: none;
+	}
+	.figure .detail .small_img .img li img{
+		width: 100%;
+		height: 100%;
+	}
+
+/*----------------partner----------*/
+	.partner .detail{
+		padding-top: 0.16rem;
+	}
+	.partner .provide h2 span{
+		color:#765654;
+	}
+	.partner .provide h2 sup{
+		font-size: 0.12rem;
+		font-family: '微软雅黑';
+	}
+
+	.partner .provide .ads{
+		display: -webkit-flex;
+		display: flex;
+		justify-content:space-between;
+		margin-bottom: 0.3rem;
+	}
+	.partner .provide .ads>div{
+		width: 2.65rem;
+	}
+	.partner .provide .ads>div img{
+		width: 100%	;
+	}
+	.partner .provide .ads>div p{
+		padding-top: 0.2rem;
+		text-align: center;
+		color:#C95731;
+		font-size: 0.18rem;
+		line-height: 0.32rem;
+	}
+	.partner .coop .item{
+		display: -webkit-flex;
+		display: flex;
+		margin-bottom: 0.3rem;
+	}
+	.partner .coop .item .img{
+		width: .72rem;
+		padding: 0;
+	}
+	.partner .coop .item .img img{
+		width: 100%;
+	}
+	.partner .coop .item .list{
+		border: 0;
+		display: block;
+		font-family:'微软雅黑';
+		font-size: 0.18rem;
+		color:#926134;
+		margin-left: 0.2rem;
+		margin-top: 0.1rem;
+		border-left: 0.02rem solid #B50005;
+		padding-left: 0.2rem;
+		height: auto;
+	}
+	.partner .coop .item .list li{
+		position: relative;
+		padding-left: 0.2rem;
+	}
+	.partner .coop .item .list li:before{
+		content:'';
+		width: 0.08rem;
+		height:0.12rem;
+		position: absolute;
+		left: 0.03rem;
+		top: 0.1rem;
+		border: 2px solid #926134;
+		
+	}
+	.partner .help h3{
+		font-size: 0.22rem;
+		color:#B50005;
+		font-weight: bold;
+		line-height: 0.6rem;
+	}
+	.partner .help p{
+		font-size: 0.18rem;
+		color:#765654;
+		line-height: 0.3rem;
+	}
+	.partner .learn .ads{
+		margin-bottom: 0.3rem;
+	}
+	.partner .learn article ul{
+		color:#C95731;
+	}
+	.partner .learn article ul li{
+		padding-left: 0.2rem;
+		position: relative;
+		line-height: 0.3rem;
+		font-size: 0.18rem;
+	}
+	.partner .learn article ul li:before{
+		content:'';
+		position: absolute;
+		display: block;
+		width: 0.04rem;
+		height: 0.04rem;
+		border-radius: 50%;
+		background-color: #C95731;
+		left: 0.1rem;
+		top: 0.15rem;
+	}
