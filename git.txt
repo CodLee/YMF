@@ -1,0 +1,7 @@
+新建空git项目
+1. git init
+2. git clone XXX(项目地址)
+编写代码--
+3. git status 查看
+4. git add .  添加所有
+5. git 
