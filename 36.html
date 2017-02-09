@@ -3,21 +3,54 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>御美坊-品牌动态</title>
 	<link rel="shortcut icon" type="image/x-icon" href="./img/icon.png" media="screen">
-	<title>御美坊</title>
 	<link rel="stylesheet" href="./css/common.css">
 	<link rel="stylesheet" href="./css/index.css">
 	<script src='./js/zepto.min.js'></script>
 	<script src='./js/swipe.js'></script>
 </head>
 <body>
-<!-- top B -->
+	<!-- top B -->
 	<header class='title'>
-	<span class='top_btn'><img src="./img/ico_top_2.png" alt=""></span>
-	<span class='logo_btn fr'><img src="./img/item_r1_c18.png" alt=""></span>
+		<span class='top_btn'><img src="./img/ico_top_2.png" alt=""></span>
+		<span class='logo_btn fr'><img src="./img/item_r1_c18.png" alt=""></span>
 		<h1>美 | 容 | 养 | 生 | 体 | 验 | 馆</h1>
 	</header>
-<!--sidebar B -->
+	<section class='brand newsmore'>
+		<div class="item">
+			<h2><img src="./img/public.png" alt=""></h2>
+		</div>
+		<article class="public">
+			<h2>御美创业联盟·精英计划:</h2>
+			<p>“御美创业精英”岗前培训班，为加盟店培训加盟老板，培养先进的管理理念。</p>
+			<p>“御美管理精英”岗前培训班，为加盟店培训优秀店长，让店面管理无忧。</p>
+			<p>“御美中医康复理疗师”岗前培训班，为加盟店培训优秀员工，让店面运营无忧。</p>
+			<p class='fwb'>为了使加盟店员工，掌握熟练的美容养生手法，更好地为美容养生人士服务。特制订本计划。:</p>
+			<h3>具体计划如下：</h3>
+			<ul>
+				<li>1.培训业务在加盟商与总部签订合同后生效，以合同标示的最后日期为结束。</li>
+				<li>2.我公司在固定地点和固定时间对加盟店的员工进行培训。\
+					<p>我公司的培训主要分两个步骤：第一是理论学习，大致以三天到一个星期。第二步为手法实习，大致是两到三个星期。</p>
+					<p>培训期间培训师不进行无偿加班，如加盟店需要额外技术提供和加班，应考虑共同协商加班费。</p>
+				</li>
+				<li>3.培训通过考核后，我公司发放权威职业资格证书
+					<p><span>①</span>《岗位能力培训合格证书》（国家卫生计生委能力建设和继续教育中心与中国健康促进基金会授权发放）</p>
+					<p><span>②</span>《中医药岗位急需紧缺人才培养培训证书》（中华中医药学会授权发放）</p>
+					<p> <span>③</span>《专业技术培训证书》（中国国家培训网授权发放）</p>
+				</li>
+			</ul>
+		</article>
+	</section>	
+	<script>
+		$('#brand_list li').on('click',function(){
+			$(this).addClass('on').siblings().removeClass('on');
+			$('.brand .detail').eq($(this).index()).addClass('on').siblings().removeClass('on');
+
+		});
+	</script>
+
+	<!--sidebar B -->
 <section class="sidebar">
 	<div class="left">
 		<div class="item on">
@@ -72,70 +105,11 @@
 	</div>
 	<div class="right"></div>
 </section>
-
-
-<!-- slider B -->
-	<!-- 引入轮播 -->
-	<div id='mySwipe' class='swipe'>
-	  <div class='swipe-wrap'>
-	    <div><img src="./img/banner1.png" alt=""></div>
-	    <div><img src="./img/banner2.png" alt=""></div>
-	    <div><img src="./img/banner3.png" alt=""></div>
-	    <div><img src="./img/banner4.png" alt=""></div>
-	  </div>
-	  <ul>
-	    <li>1</li>
-	    <li>2</li>
-	    <li>3</li>
-	    <li>4</li>
-	  </ul>
-	</div>
-<!-- ads B -->
-<section class='ads'><img src="./img/ads.png" alt=""></section>
-<!-- itemlist -->
-<section class="itemlist">
-	<ul>
-		<li><a href="3.html"><img src="./img/pinpai.png" alt=""></a></li>
-		<li><a href=""><img src="./img/qiye.png" alt=""></a></li>
-		<li><a href=""><img src="./img/xiangmu.png" alt=""></a></li>
-		<li><a href=""><img src="./img/xingxiang.png" alt=""></a></li>
-		<li><a href=""><img src="./img/hehuo.png" alt=""></a></li>
-	</ul>
-
-</section>
-<section class='mainwrap'>
-	<div class='main'>
-		<div class="logo_b">
-			<img src="./img/logo-b.png" alt="">
-		</div>
-		<!-- 经典项目 -->
-		<ul class="classic">
-			<li><a href=""><img src="./img/classic_r1_c1.png" alt="中医经络养生"></a></li>
-			<li><a href=""><img src="./img/classic_r1_c2.png" alt="艾灸养生"></a></li>
-			<li><a href=""><img src="./img/classic_r1_c3.png" alt="产后修复"></a></li>
-			<li><a href=""><img src="./img/classic_r1_c4.png" alt="科技美肤"></a></li>
-		</ul>
-		<!-- 品牌动态 -->
-		<div class="public">
-			<div class="title">
-				<div class="logo fl"><img src="./img/public.png" alt="品牌动态"></div>
-				<div class="fr text_center"><a href="35.html">more...</a></div>
-			</div>
-			<ul class="main">
-				<li><a href="">御美坊，引领美容养生新潮流</a><span class='times'>2017-1-22</span></li>
-				<li><a href="">御美坊，引领美容养生新潮流</a><span class='times'>2017-1-22</span></li>
-				<li class='last'><a href="">御美坊大中华区合伙人火爆招募中</a><span class='times '>2017-1-22</span></li>
-			</ul>
-		</div>
-	</div>
-</section>
-	
 	<!-- 底部 -->
-	<section class="footer"></section>
 	<footer>
-			<a href=""><img src="./img/item_home.png" alt=""><span>首页</span></a>
-			<a href="" class='on'><img src="./img/item_tech_on.png" alt=""><span>培训中心</span></a>
-			<a href=""><img src="./img/item_know.png" alt=""><span>电话免费咨询</span></a>
+			<a href="1.html"><img src="./img/item_home.png" alt=""><span>首页</span></a>
+			<a href=""><img src="./img/item_tech.png" alt=""><span>培训中心</span></a>
+			<a href="" class='on'><img src="./img/item_know.png" alt=""><span>电话免费咨询</span></a>
 			<a href=""><img src="./img/item_info.png" alt=""><span>在线留言</span></a>
 	</footer>
 	<script src='./js/myApp.js'></script>

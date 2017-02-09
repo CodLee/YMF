@@ -3,21 +3,41 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>御美坊-品牌动态</title>
 	<link rel="shortcut icon" type="image/x-icon" href="./img/icon.png" media="screen">
-	<title>御美坊</title>
 	<link rel="stylesheet" href="./css/common.css">
 	<link rel="stylesheet" href="./css/index.css">
 	<script src='./js/zepto.min.js'></script>
 	<script src='./js/swipe.js'></script>
 </head>
 <body>
-<!-- top B -->
+	<!-- top B -->
 	<header class='title'>
-	<span class='top_btn'><img src="./img/ico_top_2.png" alt=""></span>
-	<span class='logo_btn fr'><img src="./img/item_r1_c18.png" alt=""></span>
+		<span class='top_btn'><img src="./img/ico_top_2.png" alt=""></span>
+		<span class='logo_btn fr'><img src="./img/item_r1_c18.png" alt=""></span>
 		<h1>美 | 容 | 养 | 生 | 体 | 验 | 馆</h1>
 	</header>
-<!--sidebar B -->
+	<section class='brand newsmore'>
+		<div class="item">
+			<h2><img src="./img/public.png" alt=""></h2>
+		</div>
+		<div class="public">
+			<ul class="main">
+				<li><a href="">御美坊，引领美容养生新潮流</a><span class='times'>2017-1-22</span></li>
+				<li><a href="">御美坊，引领美容养生新潮流</a><span class='times'>2017-1-22</span></li>
+				<li class='last'><a href="">御美坊大中华区合伙人火爆招募中</a><span class='times '>2017-1-22</span></li>
+			</ul>
+		</div>
+	</section>	
+	<script>
+		$('#brand_list li').on('click',function(){
+			$(this).addClass('on').siblings().removeClass('on');
+			$('.brand .detail').eq($(this).index()).addClass('on').siblings().removeClass('on');
+
+		});
+	</script>
+
+	<!--sidebar B -->
 <section class="sidebar">
 	<div class="left">
 		<div class="item on">
@@ -72,70 +92,11 @@
 	</div>
 	<div class="right"></div>
 </section>
-
-
-<!-- slider B -->
-	<!-- 引入轮播 -->
-	<div id='mySwipe' class='swipe'>
-	  <div class='swipe-wrap'>
-	    <div><img src="./img/banner1.png" alt=""></div>
-	    <div><img src="./img/banner2.png" alt=""></div>
-	    <div><img src="./img/banner3.png" alt=""></div>
-	    <div><img src="./img/banner4.png" alt=""></div>
-	  </div>
-	  <ul>
-	    <li>1</li>
-	    <li>2</li>
-	    <li>3</li>
-	    <li>4</li>
-	  </ul>
-	</div>
-<!-- ads B -->
-<section class='ads'><img src="./img/ads.png" alt=""></section>
-<!-- itemlist -->
-<section class="itemlist">
-	<ul>
-		<li><a href="3.html"><img src="./img/pinpai.png" alt=""></a></li>
-		<li><a href=""><img src="./img/qiye.png" alt=""></a></li>
-		<li><a href=""><img src="./img/xiangmu.png" alt=""></a></li>
-		<li><a href=""><img src="./img/xingxiang.png" alt=""></a></li>
-		<li><a href=""><img src="./img/hehuo.png" alt=""></a></li>
-	</ul>
-
-</section>
-<section class='mainwrap'>
-	<div class='main'>
-		<div class="logo_b">
-			<img src="./img/logo-b.png" alt="">
-		</div>
-		<!-- 经典项目 -->
-		<ul class="classic">
-			<li><a href=""><img src="./img/classic_r1_c1.png" alt="中医经络养生"></a></li>
-			<li><a href=""><img src="./img/classic_r1_c2.png" alt="艾灸养生"></a></li>
-			<li><a href=""><img src="./img/classic_r1_c3.png" alt="产后修复"></a></li>
-			<li><a href=""><img src="./img/classic_r1_c4.png" alt="科技美肤"></a></li>
-		</ul>
-		<!-- 品牌动态 -->
-		<div class="public">
-			<div class="title">
-				<div class="logo fl"><img src="./img/public.png" alt="品牌动态"></div>
-				<div class="fr text_center"><a href="35.html">more...</a></div>
-			</div>
-			<ul class="main">
-				<li><a href="">御美坊，引领美容养生新潮流</a><span class='times'>2017-1-22</span></li>
-				<li><a href="">御美坊，引领美容养生新潮流</a><span class='times'>2017-1-22</span></li>
-				<li class='last'><a href="">御美坊大中华区合伙人火爆招募中</a><span class='times '>2017-1-22</span></li>
-			</ul>
-		</div>
-	</div>
-</section>
-	
 	<!-- 底部 -->
-	<section class="footer"></section>
 	<footer>
-			<a href=""><img src="./img/item_home.png" alt=""><span>首页</span></a>
-			<a href="" class='on'><img src="./img/item_tech_on.png" alt=""><span>培训中心</span></a>
-			<a href=""><img src="./img/item_know.png" alt=""><span>电话免费咨询</span></a>
+			<a href="1.html"><img src="./img/item_home.png" alt=""><span>首页</span></a>
+			<a href=""><img src="./img/item_tech.png" alt=""><span>培训中心</span></a>
+			<a href="" class='on'><img src="./img/item_know.png" alt=""><span>电话免费咨询</span></a>
 			<a href=""><img src="./img/item_info.png" alt=""><span>在线留言</span></a>
 	</footer>
 	<script src='./js/myApp.js'></script>

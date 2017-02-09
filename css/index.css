@@ -377,6 +377,10 @@ body{
 		line-height: 0.33rem;
 		text-align: justify;
 	}
+	.brand article h3{
+		color:#C30D23;
+		font-size: 0.24rem;
+	}
 	.brand div.img{
 		padding: 0.52rem 0 0.3rem 0;
 	}
@@ -856,4 +860,136 @@ body{
 		background-color: #C95731;
 		left: 0.1rem;
 		top: 0.15rem;
+	}
+
+	.train .item ul{
+		justify-content:space-around;
+	}
+	.train .detail {
+		padding-top: 0.46rem;
+	}
+	.train .detail .text p{
+		line-height: 0.3rem;
+	}
+	.train .detail .img p span{
+		font-size: 0.28rem;
+	}
+	.train .detail  .img {
+		padding: 0;
+	}
+	.train .plan  .img {
+		padding: 0 0 0.15rem 0;
+		background:url(../img/pxjh.png) no-repeat left bottom;
+	}
+	.train .detail  .img img{
+		width: 100%;
+	}
+	.train .detail .text_img{
+		display: -webkit-flex;
+		display: flex;
+		justify-content:space-between;
+	}
+	.train .detail  h3{
+		font-size: 0.2rem;
+		font-weight: bold;
+		color:#C30D23;
+		line-height: 0.57rem;
+	}
+	.train .detail p{
+		line-height: 0.3rem;
+		font-size: 0.18rem;
+	}
+	.train  .plan ul{
+		font-size: 0.18rem;
+		line-height: 0.3rem;
+	}
+	.train .plan ul li:last-of-type p{
+		color:rgb(192, 0, 0);
+	}
+	.message .item ul{
+		background: url(../img/brand_detail.png) no-repeat right top;
+    -webkit-background-size: 1.43rem;
+    background-size: 1.43rem;
+	}
+	.message .form_msg{
+		margin:0.6rem auto;
+		font-size: 0.18rem;
+		width:80%;
+	}
+	.message .form_msg label {
+	    padding: 0.05rem 0;
+	    display: block;
+	    color: #b50005;
+	}
+	.message .form_msg input,.message .form_msg textarea {
+	    border: 1px solid #BDBDBD;
+	    width: 100%;
+	    height: 0.35rem;
+	    line-height:0.35rem ;
+	    text-indent: 0.10rem;
+	    font-size: 0.18rem;
+	    margin-bottom: 0.10rem ;
+	    outline-color: #00b7ee;
+	}
+	.message .form_msg textarea {
+		height: auto;
+	}
+	.message .form_msg button {
+	    background-color: #b50005;
+	    -webkit-border-radius: 3px;
+	    -moz-border-radius: 3px;
+	    border-radius: 3px;
+	    font-weight: bold;
+	    width: 100%;
+	    outline: none;
+	    cursor: pointer;
+	    color: white;
+	    line-height: 0.35rem;
+	    font-size: 0.18rem;
+	    margin-bottom: 0.10rem;
+	}
+
+/*----------品牌动态更多页--------------*/
+	.newsmore{
+		margin-bottom: 0.84rem;
+	}
+	.newsmore .item{
+		padding-bottom: 0.05rem;
+		border-bottom: 0.02rem solid #C30D23;
+	}
+	.newsmore .item h2{
+		width: 100%;
+		background: url(../img/brand_detail.png) no-repeat right 0.3rem	;
+    -webkit-background-size: 1.43rem;
+    background-size: 1.43rem;
+	}
+	.newsmore .item h2 img{
+		width: 1.89rem;
+	}
+	.newsmore .public .main{
+		margin: 0.3rem auto;
+		font-size: .18rem;
+		font-family:'微软雅黑';
+		color:#765654;
+	}
+	.newsmore .public .main li{
+		padding-left: .2rem;
+		border-bottom: 1px dashed #765654;
+		line-height: .35rem;
+		background:url(../img/index_1.png) no-repeat 0 .1rem;
+		background-size: .16rem;
+	}
+	.newsmore .public .main .times{
+		float: right;
+	}
+	.newsmore article{
+		font-size: 0.18rem;
+		line-height: 0.3rem;
+	}
+
+	.newsmore article h2{
+		font-size: 0.28rem;
+		text-align: center;
+		color:#C30D23;
+		margin-bottom: 0.15rem;
 	}
